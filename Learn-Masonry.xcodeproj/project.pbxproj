@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		987F7C5A360C24E33114F41E /* libPods-Learn-Masonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196230239FFFE462318BE53F /* libPods-Learn-Masonry.a */; };
 		9A1A019E20722A870015E42A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A019D20722A870015E42A /* AppDelegate.m */; };
 		9A1A01A120722A870015E42A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A01A020722A870015E42A /* ViewController.m */; };
 		9A1A01A420722A870015E42A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1A01A220722A870015E42A /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		196230239FFFE462318BE53F /* libPods-Learn-Masonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Learn-Masonry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D71161DA405CB1005B7E4B /* Pods-Learn-Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-Masonry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learn-Masonry/Pods-Learn-Masonry.debug.xcconfig"; sourceTree = "<group>"; };
 		9A1A019920722A870015E42A /* Learn-Masonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-Masonry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1A019C20722A870015E42A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A1A019D20722A870015E42A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9A1A01A820722A870015E42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A1A01AA20722A870015E42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A1A01AB20722A870015E42A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D5B5510720ACF3AFBF7F86D /* Pods-Learn-Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-Masonry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Learn-Masonry/Pods-Learn-Masonry.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987F7C5A360C24E33114F41E /* libPods-Learn-Masonry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4513AC81403FDA75260BC789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				196230239FFFE462318BE53F /* libPods-Learn-Masonry.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A1A019020722A870015E42A = {
 			isa = PBXGroup;
 			children = (
 				9A1A019B20722A870015E42A /* Learn-Masonry */,
 				9A1A019A20722A870015E42A /* Products */,
+				FA64EE66E805D4481793C999 /* Pods */,
+				4513AC81403FDA75260BC789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = "Learn-Masonry";
 			sourceTree = "<group>";
 		};
+		FA64EE66E805D4481793C999 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26D71161DA405CB1005B7E4B /* Pods-Learn-Masonry.debug.xcconfig */,
+				9D5B5510720ACF3AFBF7F86D /* Pods-Learn-Masonry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A1A01AF20722A870015E42A /* Build configuration list for PBXNativeTarget "Learn-Masonry" */;
 			buildPhases = (
+				1E7A306457106D157BCA1DD9 /* [CP] Check Pods Manifest.lock */,
 				9A1A019520722A870015E42A /* Sources */,
 				9A1A019620722A870015E42A /* Frameworks */,
 				9A1A019720722A870015E42A /* Resources */,
+				72CF7D94F145B08315E231AC /* [CP] Embed Pods Frameworks */,
+				E6313457252162A437337F5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7A306457106D157BCA1DD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Learn-Masonry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72CF7D94F145B08315E231AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Learn-Masonry/Pods-Learn-Masonry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6313457252162A437337F5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Learn-Masonry/Pods-Learn-Masonry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A1A019520722A870015E42A /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		9A1A01B020722A870015E42A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D71161DA405CB1005B7E4B /* Pods-Learn-Masonry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +369,7 @@
 		};
 		9A1A01B120722A870015E42A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D5B5510720ACF3AFBF7F86D /* Pods-Learn-Masonry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
